@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nithish Nuthalapati | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+      position: relative;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #151515, #222);
+      text-align: center;
+      padding: 0 1rem;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+    header h1 span {
+      color: #00d8ff;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    header p {
+      max-width: 600px;
+      margin-top: 1.5rem;
+      color: #ddd;
+    }
+    header a.download-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #1aa39c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    header a.download-btn i {
+      margin-left: 8px;
+    }
+    .top-right-icons {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    .top-right-icons i {
+      color: #00d8ff;
+      font-size: 1.4rem;
+    }
+
+    .sidebar-icons {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .sidebar-icons a {
+      width: 40px;
+      height: 40px;
+      background-color: #f3f1f1;
+      color: #00227b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .sidebar-icons a.active,
+    .sidebar-icons a:hover {
+      background-color: #1aa39c;
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3.section-title {
+      font-size: 2rem;
+      color: #00d8ff;
+      margin-bottom: 1rem;
+    }
+    .about p, .skills ul, .contact p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+    .skills ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 20px;
+  margin-top: 1rem;
+  padding: 0;
+  justify-content: start;
+}
+
+.skills li {
+  background: #1c1c1c;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #fff;
+  display: inline-block;
+}
+
+    .projects .project {
+      background: #1a1a1a;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid #00d8ff;
+      border-radius: 4px;
+    }
+    .timeline {
+      border-left: 3px solid #00d8ff;
+      padding-left: 2rem;
+    }
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+    .timeline-item h4 {
+      color: #00d8ff;
+      margin-bottom: 0.3rem;
+    }
+    .timeline-item p {
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #888;
+    }
+    .contact a {
+      color: #00d8ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌟 Left Sidebar Icons -->
+  <div class="sidebar-icons">
+    <a href="#home" title="Home"><i class="fas fa-home"></i></a>
+    <a href="#about" title="About"><i class="fas fa-user"></i></a>
+    <a href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a>
+    <a href="#skills" title="Skills"><i class="fas fa-briefcase"></i></a>
+    <a href="#projects" title="Projects"><i class="fas fa-laptop-code"></i></a>
+    <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+    <a href="your_cv_link_here" download title="Download CV"><i class="fas fa-download"></i></a>
+  </div>
+
+  <!-- 🌟 Header Section -->
+  <header id="home">
+    <div class="top-right-icons">
+      <a href="mailto:nuthalapatinithish1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Nithish2979" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nithish-nuthalapati-4b8251291/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="your_cv_link_here" download title="Download CV"><i class="fas fa-download"></i></a>
+    </div>
+    <h1>Hello, I'm <span>Nithish Nuthalapati</span></h1>
+    <h2>Aspiring Web developer | Final Year B.Tech Student </h2>
+    <p>
+      Welcome to my portfolio. I Build elegant solutions with code — I’m a curious mind crafting digital experiences through clean design and smart development. Explore my projects, skills, and get to know more about me. I am a Final Year B.Tech Student skilled in HTML, CSS, JavaScript, Python, and MySQL. I enjoy being a web developer and continuously learn new technologies.
+    </p>
+    <a href="your_cv_link_here" download class="download-btn">
+      Download CV <i class="fas fa-download"></i>
+    </a>
+  </header>
+
+  <!-- 🔹 About -->
+  <section id="about" class="about">
+    <h3 class="section-title">About Me</h3>
+    <p>
+      I'm a passionate and self-motivated web development enthusiast with a strong interest in building modern, responsive, and user-friendly websites. I enjoy turning ideas into real-world applications through clean and efficient code. With a solid foundation in HTML, CSS, JavaScript, and hands-on experience with Python, I continuously strive to expand my skill set and keep up with the evolving tech landscape. Whether it's front-end design or back-end logic, I'm eager to take on new challenges and grow as a developer.
+    </p>
+  </section>
+
+  <!-- 🔹 Timeline / Education -->
+  <section id="education" class="timeline">
+    <h3 class="section-title">My Timeline</h3>
+    <div class="timeline-item">
+      <h4>2022 - Present</h4>
+      <h3>Bachelor of Technology</h3>
+      <h1>R.V.R.&J.C College of Engineering</h1>
+      <p>CGPA - 8.02</p>
+      <p>Bachelor of Computer Science Engineering - Internet of Things</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2020 - 2022</h4>
+      <h3>Senior Secondary School</h3>
+      <h1>Sri Chaitanya College</h1>
+      <p>Percentage - 94.1</p>
+      <p>Intermediate - MPC</p>
+    </div>
+    <div class="timeline-item">
+      <h4>2017 - 2020</h4>
+      <h3>Secondary School</h3>
+      <p>Ravi High School</p>
+      <p>Scored - 594/600</p>
+    </div>
+  </section>
+
+
+  <!-- 🔹 Skills -->
+  <section id="skills" class="skills">
+    <h3 class="section-title">Technical Skills</h3>
+    <ul>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+
+  <!-- 🔹 Projects -->
+  <section id="projects" class="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="project">
+      <h4>Project One</h4>
+      <p>A brief description of the first project.</p>
+    </div>
+    <div class="project">
+      <h4>Project Two</h4>
+      <p>A brief description of the second project.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Contact -->
+   <footer>
+  <section id="contact" class="contact">
+    <h3 class="section-title">Contact Me</h3>
+    <p> <a href="mailto:nuthalapatinithish1@gmail.com"><i class="fas fa-envelope"></i>  nuthalapatinithish1@gmail.com</a></p>
+    <a href="https://github.com/Nithish2979" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/nithish-nuthalapati-4b8251291/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </section>
+  </footer>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>&copy; 2026 Nithish Nuthalapati</p>
+  </footer>
+
+  <script>
+  const sections = document.querySelectorAll("section, header");
+  const navLinks = document.querySelectorAll(".sidebar-icons a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
