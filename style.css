@@ -1,0 +1,175 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+      position: relative;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #151515, #222);
+      text-align: center;
+      padding: 0 1rem;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+    header h1 span {
+      color: #00d8ff;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+    header p {
+      max-width: 600px;
+      margin-top: 1.5rem;
+      color: #ddd;
+    }
+    header a.download-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #1aa39c;
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    header a.download-btn i {
+      margin-left: 8px;
+    }
+    .top-right-icons {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    .top-right-icons i {
+      color: #00d8ff;
+      font-size: 1.4rem;
+    }
+
+    .sidebar-icons {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .sidebar-icons a {
+      width: 40px;
+      height: 40px;
+      background-color: #f3f1f1;
+      color: #00227b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .sidebar-icons a.active,
+    .sidebar-icons a:hover {
+      background-color: #1aa39c;
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3.section-title {
+      font-size: 2rem;
+      color: #00d8ff;
+      margin-bottom: 1rem;
+    }
+    .about p, .skills ul, .contact p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+    .skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 20px;
+    margin-top: 1rem;
+    padding: 0;
+    justify-content: start;
+    }
+
+    .skills li {
+    background: #1c1c1c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #fff;
+    display: inline-block;
+    }
+
+    .projects .project {
+      background: #1a1a1a;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid #00d8ff;
+      border-radius: 4px;
+    }
+    .timeline {
+      border-left: 3px solid #00d8ff;
+      padding-left: 2rem;
+    }
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+    .timeline-item h4 {
+      color: #00d8ff;
+      margin-bottom: 0.3rem;
+    }
+    .timeline-item p {
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #888;
+    }
+    .contact a {
+      color: #00d8ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    .project-link[href*="github"] {
+     color: #00d8ff;
+    }
+    .project-link[href*="https://resume-screener-py.onrender.com"] {
+     color: #00d8ff;
+    }
+    .project-link {
+     margin-right: 12px; /* adds space between them */
+    }
