@@ -173,7 +173,17 @@
       display: block;
       margin-top: 0.5rem;
     }
-  </style>
+    .project-link[href*="github"] {
+     color: #00d8ff;
+    }
+    .project-link[href*="https://resume-screener-py.onrender.com"] {
+     color: #00d8ff;
+    }
+    .project-link {
+     margin-right: 12px; /* adds space between them */
+    }
+
+</style>
 </head>
 <body>
 
@@ -254,17 +264,29 @@
 
 
   <!-- 🔹 Projects -->
-  <section id="projects" class="projects">
-    <h3 class="section-title">Projects</h3>
-    <div class="project">
-      <h4>Project One</h4>
-      <p>A brief description of the first project.</p>
+  <!-- 🔹 Projects Section -->
+<section id="projects" class="projects">
+  <h3 class = "section-title">Projects</h3>
+
+  <!-- ✅ Project Card -->
+  <div class="project-card">
+    <div class="project-info">
+       <h3>Project One</h3>
+      <h2>AI-Powered Resume Screening System</h2>
+      <p>
+        <strong>Overview:</strong>
+        <p>
+        A smart web application that analyzes resumes against job descriptions using NLP and ML.
+        It provides ATS compatibility scores, highlights matching skills, and suggests improvements.
+        Built with Streamlit and deployed for real-time usage.<br>
+        <strong>Note:</strong> Response time may take up to 50 seconds due to free hosting on Render(Live Demo).
+        </p>
+      </p>
+      <a href="https://github.com/Nithish2979/resume_screener.py" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub </a>
+      <a href="https://resume-screener-py.onrender.com" target="_blank" class="project-link"> 🌐 Live Demo</a>
     </div>
-    <div class="project">
-      <h4>Project Two</h4>
-      <p>A brief description of the second project.</p>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- 🔹 Contact -->
    <footer>
